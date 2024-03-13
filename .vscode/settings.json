@@ -1,0 +1,15 @@
+{
+	"indentRainbow.colorOnWhiteSpaceOnly": false,
+	"html.format.wrapAttributes": "auto",
+	"html.format.wrapLineLength": 120,
+	"prettier.enable": true,
+	"prettier.endOfLine": "lf",
+	"prettier.htmlWhitespaceSensitivity": "css",
+	"prettier.insertPragma": false,
+	"prettier.useEditorConfig": true,
+	"prettier.singleAttributePerLine": false,
+	"prettier.tabWidth": 2,
+	"prettier.useTabs": false,
+	"prettier.vueIndentScriptAndStyle": false,
+	"editor.wordWrapColumn": 80
+}

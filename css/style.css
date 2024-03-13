@@ -1,0 +1,105 @@
+:root {
+  --dark-color: #19283f;
+  --green-color: #33d1cc;
+  --red-color: #ff3150;
+  --section-color: #eff7fa;
+}
+body {
+  font-family: "Roboto", sans-serif;
+}
+.navbar {
+  background-color: var(--dark-color);
+}
+.navbar a {
+  color: var(--green-color);
+}
+.nav-item .nav-link {
+  color: var(--section-color);
+}
+.nav-item .nav-link.active,
+.nav-item .nav-link:focus,
+.nav-item .nav-link:hover {
+  color: var(--green-color);
+}
+.landing {
+  min-height: calc(100vh - 70px);
+}
+.landing,
+.project,
+.subscribe button,
+.footer {
+  background-color: var(--dark-color);
+}
+.landing p {
+  color: #aaa;
+}
+.navbar-toggler:focus {
+  box-shadow: none;
+}
+.main-header::after {
+  content: "";
+  position: absolute;
+  height: 2px;
+  width: 100px;
+  bottom: -30px;
+  left: 50%;
+  background-color: var(--green-color);
+  transform: translate(-50%, -50%);
+}
+.feat-box .icon-holder {
+  height: 200px;
+}
+.feat-box .icon-holder svg {
+  left: 50%;
+  transform: translateX(-50%);
+}
+.feat-box .icon-holder .number {
+  font-size: 12rem;
+  color: var(--section-color);
+}
+.feat-box .icon-holder .icon {
+  color: var(--green-color);
+}
+.our-work,
+.team {
+  background-color: var(--section-color);
+}
+.our-work .container ul li:hover {
+  cursor: pointer;
+  color: var(--red-color) !important;
+}
+.our-work .container ul li.active:hover {
+  color: var(--dark-color) !important;
+}
+.box-work:hover::before {
+  left: 50%;
+}
+.box-work::before {
+  content: attr(data-work);
+  position: absolute;
+  left: -50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  height: calc(100% - 8px);
+  width: calc(100% - 8px);
+  background-color: #0dcaf0a6;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-size: 20px;
+  font-weight: 600;
+  transition: 0.3s;
+}
+.subscribe input:focus {
+  outline: none;
+}
+.subscribe input::placeholder {
+  color: white;
+}
+.subscribe input::placeholder::cur {
+  color: white;
+}
+.footer button {
+  border: 6px solid #1e304c;
+}
